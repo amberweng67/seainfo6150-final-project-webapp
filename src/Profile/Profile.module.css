@@ -1,0 +1,18 @@
+.container {
+  padding: 64px;
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listContainer > *:not(:last-child) {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}

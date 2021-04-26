@@ -1,68 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch, Route, Link } from "react-router-dom";
+import styles from './App.module.css';
 
 import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
+import SignUp from "./SignUp/SignUp.jsx";
+import Login from "./Login/Login.jsx";
 import Error from "./Error/Error.jsx";
-
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
+import FindCoach from "./FindCoach/FindCoach";
+import CoachPage from "./CoachPage/CoachPage";
+import Profile from './Profile/Profile';
 
 function App() {
+  const [user, setUser] = useState();
+  const [coachList, setCoachList] = useState([]);
+
   return (
     <>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
+      <header className={styles.header}>
+        <nav className={styles.topnav}>
+          <div className={styles.topnavLeft}>
+          </div>
+          <div className={styles.topnavRight}>
+            <Link to="/">Home</Link>
+            <Link to="/findcoach">Find a Coach</Link>
+            {user ? <Link to="/profile">{user}</Link> :
+              <>
+                <Link to="/signup">Sign Up</Link>
+                <Link to="/login">Log In</Link>
+              </>
+            }
+          </div>
         </nav>
       </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
-        <Route
-          path="/bar/:categoryId/:productId"
-          exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
-        />
-        <Route
-          path="/baz"
-          exact
-          render={() => <Baz content={externalContent} />}
-        />
-        <Route component={Error} />
-      </Switch>
+      <div className={styles.contentContainer}>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/findcoach" exact component={FindCoach} />
+          <Route path="/signup" exact component={SignUp} />
+          <Route path="/login" exact render={() => <Login setUser={setUser} />} />
+          <Route path="/profile" exact render={() => <Profile user={user} coachList={coachList} />} />
+          <Route path="/coaches/:coachId" exact render={(props) => <CoachPage {...props} coachList={coachList} setCoachList={setCoachList} user={user}/>} />
+          <Route component={Error} />
+        </Switch>
+      </div>
     </>
   );
 }

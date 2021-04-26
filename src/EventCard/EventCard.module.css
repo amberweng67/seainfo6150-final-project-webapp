@@ -1,0 +1,15 @@
+.cardContainer {
+  height: 400px;
+  width: 200px;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px;
+  border: solid 1px #e3e6ea;
+}
+
+.cardContainer > img {
+  width: 100%;
+}
+.cardContainer:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}

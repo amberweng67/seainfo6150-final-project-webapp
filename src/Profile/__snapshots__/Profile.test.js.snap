@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the profile component correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <h3>
+      test
+    </h3>
+    <h4>
+      Coach list:
+    </h4>
+    <div
+      class="listContainer"
+    />
+  </div>
+</div>
+`;

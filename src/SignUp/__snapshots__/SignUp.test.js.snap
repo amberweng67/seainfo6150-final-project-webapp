@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUp tests renders correctly 1`] = `
+<div>
+  <form>
+    <div
+      class="container"
+    >
+      <h1>
+        Sign Up
+      </h1>
+      <p>
+        Please fill in this form to create an account.
+      </p>
+      <hr />
+      <label
+        for="email"
+      >
+        <b>
+          Email*
+        </b>
+      </label>
+      <input
+        name="email"
+        placeholder="Enter Email"
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        for="user-name"
+      >
+        <b>
+          User Name*
+        </b>
+      </label>
+      <input
+        name="user-name"
+        placeholder="User name"
+        type="text"
+        value=""
+      />
+      <label
+        for="psw"
+      >
+        <b>
+          Password*
+        </b>
+      </label>
+      <input
+        name="psw"
+        placeholder="Enter Password"
+        required=""
+        type="password"
+        value=""
+      />
+      <label
+        for="psw-repeat"
+      >
+        <b>
+          Repeat Password*
+        </b>
+      </label>
+      <input
+        name="psw-repeat"
+        placeholder="Repeat Password"
+        required=""
+        type="password"
+        value=""
+      />
+      <div
+        class="inputField"
+      >
+        <label>
+          <b>
+            Sex*
+          </b>
+        </label>
+        <div>
+          <div>
+            <input
+              id="male"
+              name="sex"
+              type="radio"
+              value="male"
+            />
+            <label
+              for="male"
+            >
+              Male
+            </label>
+          </div>
+          <div>
+            <input
+              id="female"
+              name="sex"
+              type="radio"
+              value="female"
+            />
+            <label
+              for="female"
+            >
+              Female
+            </label>
+          </div>
+          <div>
+            <input
+              id="other"
+              name="sex"
+              type="radio"
+              value="other"
+            />
+            <label
+              for="other"
+            >
+              Other
+            </label>
+          </div>
+        </div>
+      </div>
+      <label
+        for="phone-number"
+      >
+        <b>
+          Phone Number
+        </b>
+      </label>
+      <input
+        name="phone-number"
+        placeholder="Phone Number: 1234567890"
+        type="text"
+        value=""
+      />
+      <label
+        for="careerField"
+      >
+        <b>
+          Career Field
+        </b>
+      </label>
+      <div
+        class="inputField"
+      >
+        <select
+          id="careerField"
+          name="careerField"
+        >
+          <option
+            value="Product Manager"
+          >
+            Product Manager
+          </option>
+          <option
+            value="UX Designer"
+          >
+            UX Designer
+          </option>
+          <option
+            value="Software Engineer"
+          >
+            Software Engineer
+          </option>
+          <option
+            value="Data Scientist"
+          >
+            Data Scientist
+          </option>
+          <option
+            value="Business Analyst"
+          >
+            Business Analyst
+          </option>
+          <option
+            value="Other"
+          >
+            Other
+          </option>
+        </select>
+      </div>
+      <label
+        for="educationlevel"
+      >
+        <b>
+          Education Level
+        </b>
+      </label>
+      <div
+        class="inputField"
+      >
+        <select
+          id="educationlevel"
+          name="educationlevel"
+        >
+          <option
+            value="Bacholar"
+          >
+            Bacholar
+          </option>
+          <option
+            value="Master"
+          >
+            Master
+          </option>
+          <option
+            value="Doctor"
+          >
+            Doctor
+          </option>
+          <option
+            value="MBA"
+          >
+            MBA
+          </option>
+          <option
+            value="JD"
+          >
+            JD
+          </option>
+          <option
+            value="Other"
+          >
+            Other
+          </option>
+        </select>
+      </div>
+      <label>
+        <input
+          checked=""
+          name="remember"
+          type="checkbox"
+        />
+         Remember me
+      </label>
+      <p>
+        By creating an account you agree to our Terms & Privacy.
+      </p>
+      <div
+        class="clearfix"
+      >
+        <button
+          class="regularbutton"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          class="regularbutton"
+          type="button"
+        >
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;

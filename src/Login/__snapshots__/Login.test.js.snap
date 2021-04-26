@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the login component correctly 1`] = `
+<div>
+  <div>
+    <form>
+      <div
+        class="container"
+      >
+        <label
+          for="uname"
+        >
+          <b>
+            Username
+          </b>
+        </label>
+        <input
+          name="uname"
+          placeholder="Enter Username"
+          required=""
+          type="text"
+          value=""
+        />
+        <label
+          for="psw"
+        >
+          <b>
+            Password
+          </b>
+        </label>
+        <input
+          name="psw"
+          placeholder="Enter Password"
+          required=""
+          type="password"
+          value=""
+        />
+        <button>
+          Login
+        </button>
+        <label>
+          <input
+            checked=""
+            name="remember"
+            type="checkbox"
+          />
+           Remember me
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+`;

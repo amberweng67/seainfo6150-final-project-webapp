@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  padding: 12px 0; 
+  position: fixed; 
+  width: 100%;
+  top: 0; 
+  left: 0;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.topnav > * {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.topnav > *:last-child {
+  margin-right: 32px;
+}
+
+.topnav > *:first-child {
+  margin-left: 32px;
+}
+
+.topnav .topnavRight {
+  display: flex;
+}
+
+.topnav .topnavLeft {
+  display: flex;
+  width: 60%;
+}
+
+.topnav .searchBar {
+  margin: 0;
+  padding: 8px 0;
+  width: 60%;
+}
+
+.contentContainer {
+  margin-top: 58px;
+  padding: 16px;
+}

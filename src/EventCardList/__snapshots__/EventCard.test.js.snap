@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the event card component correctly 1`] = `
+<div>
+  <div
+    class="listContainer"
+  >
+    <div
+      class="cardContainer"
+    >
+      <div>
+        POTATOES
+      </div>
+      <div>
+        <span
+          aria-label="calendar icon for time"
+          role="img"
+        >
+          📆
+        </span>
+         
+        12/4/2069
+      </div>
+      <div>
+        <span
+          aria-label="pin icon for location"
+          role="img"
+        >
+          📌
+        </span>
+         
+        Slovakia
+      </div>
+      <div>
+        volume supply poor tongue camp decide mirror turn trunk fully everything parts realize pony shelter see crop numeral clay doubt brush track great cabin
+      </div>
+      <div>
+        Larry Cohen
+      </div>
+    </div>
+    <div
+      class="cardContainer"
+    >
+      <div>
+        STAR
+      </div>
+      <div>
+        <span
+          aria-label="calendar icon for time"
+          role="img"
+        >
+          📆
+        </span>
+         
+        5/5/2051
+      </div>
+      <div>
+        <span
+          aria-label="pin icon for location"
+          role="img"
+        >
+          📌
+        </span>
+         
+        Papua New Guinea
+      </div>
+      <div>
+        fairly dirt location community he back officer shallow into source crew helpful feel paragraph snake sweet poetry dress driver terrible rays especially shut managed
+      </div>
+      <div>
+        Jason McBride
+      </div>
+    </div>
+  </div>
+</div>
+`;

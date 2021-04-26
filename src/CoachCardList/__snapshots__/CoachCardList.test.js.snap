@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the coach card list component correctly 1`] = `
+<div>
+  <div
+    class="listContainer"
+  >
+    <a
+      class="link"
+      href="/coaches/a45e2d9c-cc14-5d54-844f-c6da44f94d0f"
+    >
+      <div
+        class="cardContainer"
+      >
+        <div>
+          Grace Lynch
+        </div>
+        <div>
+          Senior Product Manager
+        </div>
+        <div>
+          She inc
+        </div>
+      </div>
+    </a>
+    <a
+      class="link"
+      href="/coaches/9e4c2e5c-3856-5530-90af-2d603d39c271"
+    >
+      <div
+        class="cardContainer"
+      >
+        <div>
+          Minerva Waters
+        </div>
+        <div>
+          Product Manager
+        </div>
+        <div>
+          Stopped inc
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

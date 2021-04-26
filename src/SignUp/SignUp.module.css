@@ -1,0 +1,52 @@
+.container {
+  padding: 16px;
+  margin: 16px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.regularbutton{
+  background-color: #001a3b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 20px;
+  }
+
+.error {
+  color: red;
+}
+
+.inputField {
+  margin: 8px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .formContainer  {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width:601px) {
+  .formContainer  {
+    width: 75%;
+  }
+}
